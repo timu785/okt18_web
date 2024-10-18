@@ -1,0 +1,63 @@
+/*
+oldalbeállítások
+Asztali nézetben max 800px, 80%, az oldal közepén
+négy kép legyen egymás mellett a galériában
+Töréspontok:
+650px - két kép legyen egymás mellett a galériában
+500px - egy kép legyen egymás mellett a galériában
+*/
+
+body{
+    background-color: antiquewhite;
+    width:80%;
+    max-width: 800px;
+    margin:auto;
+}
+img{
+    width:100%;
+}
+.tarolo{
+    border:2px solid black;
+}
+.fejlec{
+    border:2px solid black;
+    margin:20px;
+}
+.nav{
+    border:2px solid black;
+    margin:20px;
+}
+.nav ul{
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    list-style-type: none;
+}
+.nav ul li a{
+    text-decoration: none;
+}
+.fokep{
+    border:2px solid black;
+    margin:20px;
+}
+.galeria{
+    margin:20px;
+}
+.galeria_grid{
+    border:2px solid black;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 800px)
+{
+    .galeria_grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .galeria_grid{
+        grid-template-columns: 1fr;
+    }
+}
